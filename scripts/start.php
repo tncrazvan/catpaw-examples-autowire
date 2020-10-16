@@ -1,4 +1,4 @@
-#!/usr/bin/php
+#!/bin/bash
 <?php
 chdir(dirname(__FILE__).'/..');
 error_reporting(E_ALL);
