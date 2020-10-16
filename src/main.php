@@ -1,7 +1,6 @@
 <?php
 
 use api\http\AccountController;
-use com\github\tncrazvan\catpaw\tools\Caster;
 use models\Account;
 
 return [
