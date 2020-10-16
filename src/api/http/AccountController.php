@@ -3,12 +3,13 @@ namespace api\http;
 
 use io\github\tncrazvan\autowire\Autowired;
 use com\github\tncrazvan\catpaw\http\HttpEventHandler;
+use com\github\tncrazvan\catpaw\http\methods\HttpMethodGet;
 use com\github\tncrazvan\catpaw\http\methods\HttpMethodPost;
 use io\github\tncrazvan\autowire\Singleton;
 use models\Account;
 use services\AccountService;
 
-class AccountController extends HttpEventHandler implements HttpMethodPost{
+class AccountController extends HttpEventHandler implements HttpMethodGet,HttpMethodPost{
     use Singleton;
     use Autowired;
 
