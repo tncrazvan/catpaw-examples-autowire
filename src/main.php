@@ -10,7 +10,7 @@ return [
     "asciiTable" => false,
     "events" => [
         "http"=>[
-            "/account" => fn(Account $body) => AccountController::singleton($body)
+            "/account" => fn(?Account $body) => AccountController::singleton($body)
         ],
         "websocket"=>[]
     ]
